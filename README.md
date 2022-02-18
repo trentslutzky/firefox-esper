@@ -11,6 +11,7 @@ Custom firefox css styling to match the rest of my linux deskrop environment (es
 - URL bar above tab bar because I like it better that way
 - The font comes from my GTK theme (JetBrainsMono Nerd Font)
 - Only show the tab close button on the active tab
+- Thin variant scroll bars with dark themeing
 
 also includes a user.js file for automatically configuring some firefox graphical settings (I don't know if it actually does anything)
 
