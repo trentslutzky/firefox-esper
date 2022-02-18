@@ -85,6 +85,11 @@
   visibility: collapse;
 }
 
+.tab-icon-sound-label{
+  color: #51ca02;
+  font-weight: bold !important;
+}
+
 /* reverse urlbar so all the gizmos are on one side */
 #urlbar-input-container{
   display:flex !important;
