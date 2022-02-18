@@ -53,9 +53,16 @@
 
 /*hide tab icons*/
 .tab-icon-stack{
-  #display:none;
   filter: grayscale(1) !important;
   margin-right:7px;
+}
+
+/* hide close button on inactive tab */
+.tabbrowser-tab > .tab-stack > .tab-content > .tab-close-button{
+  display: none;
+}
+.tabbrowser-tab[selected=true] > .tab-stack > .tab-content > .tab-close-button{
+  display: unset;
 }
 
 /* hidepage action buttons */
