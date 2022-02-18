@@ -1,0 +1,124 @@
+/* transparent background  */
+#main-window{
+  background: #000000cf !important;
+  font-kerning: normal;
+	border: none !important;
+}
+#navigator-toolbox, #navigator-toolbox-background{
+  background: transparent !important;: 
+}
+.browser-toolbar{
+  background: transparent !important;
+}
+#navigator-toolbox{
+  #border-bottom: none !important;
+}
+#urlbar-background, #searchbar{
+  background: transparent !important;
+  border: none !important;
+}
+
+#urlbar-input{
+  padding-inline: 10px !important;
+}
+
+#urlbar-input:focus{
+  background: #fbfbfb1c !important;;
+}
+
+* {
+  outline: none !important;
+}
+
+/* hide url search dropdown */
+.urlbarView{
+  display: none !important;
+}
+
+/* hide back/forward buttons */
+#forward-button, #back-button{
+  visibility: collapse;
+}
+
+/* flip the url and tab bars */
+#navigator-toolbox{
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+/* hide urlbar identity box */
+#identity-icon-box{
+  display: none;
+}
+
+/*hide tab icons*/
+.tab-icon-stack{
+  #display:none;
+  filter: grayscale(1) !important;
+  margin-right:7px;
+}
+
+/* hidepage action buttons */
+#page-action-buttons{
+  display:none;
+}
+
+/* tab bar shape and spacing */
+.tab-background{
+  border-radius: 0 !important;
+  margin: 0 !important;
+  border:none !important;
+}
+.tabbrowser-tab{
+  padding-inline: 0px !important;
+  margin-right: 2px !important;
+}
+
+#tracking-protection-icon-container{
+  visibility: collapse;
+}
+
+/* reverse urlbar so all the gizmos are on one side */
+#urlbar-input-container{
+  display:flex !important;
+  flex-direction: row-reverse;
+}
+.urlbar-input-box{
+  flex-grow: 1;
+}
+#urlbar-go-button{
+  display:none !important;
+}
+
+/* tab backgrounds */
+.tab-background{
+  background: #fbfbfb03;
+}
+.tab-background[selected="true"]{
+  background: #ffffff10 !important; 
+}
+
+.toolbarbutton-icon{
+  filter: grayscale(1);
+}
+
+/* tab context line */
+.tab-stack > .tab-background > .tab-context-line{
+  height:1px !important;
+  margin:0 !important;
+  border-radius: 0 !important;
+  background: #51ca02;
+  opacity: 0.7;
+  transition: all 0.2s !important;
+}
+.tab-stack > .tab-background[selected="true"] > .tab-context-line{
+  height: 5px !important;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-variant-ligatures: none;
+	font-kerning: normal;
+}
