@@ -1,3 +1,6 @@
+/* import pywal colors */
+@import url('file:///home/tls/.cache/wal/colors.css');
+
 /* transparent background  */
 #main-window{
   background: #000000cf !important;
@@ -5,7 +8,7 @@
 	border: none !important;
 }
 #navigator-toolbox, #navigator-toolbox-background{
-  background: transparent !important;: 
+  background: transparent !important;
 }
 .browser-toolbar{
   background: transparent !important;
@@ -119,7 +122,7 @@
   height:1px !important;
   margin:0 !important;
   border-radius: 0 !important;
-  background: #51ca02;
+  background: var(--color4);
   opacity: 0.7;
   transition: all 0.2s !important;
 }

@@ -1,11 +1,3 @@
-/* Removes the white loading page */
-/* url(about:newtab), url(about:home) */
-@-moz-document url(about:blank) {
-	html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
-		background: black !important;
-	}
-}
-
 /* Sets up minimal scrollbar */
 :root {
 	scrollbar-width: thin !important;
