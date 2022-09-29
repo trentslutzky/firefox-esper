@@ -1,37 +1,5 @@
-/* import pywal colors */
-@import url('file:///home/tls/.cache/wal/colors.css');
 
-/* transparent background  */
-#main-window{
-  background: #000000cf !important;
-  font-kerning: normal;
-	border: none !important;
-}
-#navigator-toolbox, #navigator-toolbox-background{
-  background: transparent !important;
-}
-.browser-toolbar{
-  background: transparent !important;
-}
-#navigator-toolbox{
-  #border-bottom: none !important;
-}
-#urlbar-background, #searchbar{
-  background: transparent !important;
-  border: none !important;
-}
-
-#urlbar-input{
-  padding-inline: 10px !important;
-}
-
-#urlbar-input:focus{
-  background: #fbfbfb1c !important;;
-}
-
-* {
-  outline: none !important;
-}
+/* HIDE THINS I DONT WANT*/
 
 /* hide url search dropdown */
 .urlbarView{
@@ -41,12 +9,6 @@
 /* hide back/forward buttons */
 #forward-button, #back-button{
   visibility: collapse;
-}
-
-/* flip the url and tab bars */
-#navigator-toolbox{
-  display: flex !important;
-  flex-direction: column-reverse !important;
 }
 
 /* hide urlbar identity box */
@@ -73,67 +35,107 @@
   display:none;
 }
 
-/* tab bar shape and spacing */
-.tab-background{
-  border-radius: 0 !important;
-  margin: 0 !important;
-  border:none !important;
-}
-.tabbrowser-tab{
-  padding-inline: 0px !important;
-  margin-right: 2px !important;
-}
-
 #tracking-protection-icon-container{
   visibility: collapse;
 }
 
-.tab-icon-sound-label{
-  color: #51ca02;
-  font-weight: bold !important;
-}
-
-/* reverse urlbar so all the gizmos are on one side */
-#urlbar-input-container{
-  display:flex !important;
-  flex-direction: row-reverse;
-}
-.urlbar-input-box{
-  flex-grow: 1;
-}
 #urlbar-go-button{
   display:none !important;
 }
 
-/* tab backgrounds */
-.tab-background{
-  background: #fbfbfb03;
-}
-.tab-background[selected="true"]{
-  background: #ffffff10 !important; 
-}
-
-.toolbarbutton-icon{
-  filter: grayscale(1);
-}
-
-/* tab context line */
-.tab-stack > .tab-background > .tab-context-line{
-  height:1px !important;
-  margin:0 !important;
-  border-radius: 0 !important;
-  background: var(--color4);
-  opacity: 0.7;
-  transition: all 0.2s !important;
-}
-.tab-stack > .tab-background[selected="true"] > .tab-context-line{
-  height: 5px !important;
-}
+/******************************/
 
 * {
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	font-variant-ligatures: none;
 	font-kerning: normal;
+  outline: none !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+/* main color */
+#main-window {
+  background: #151515 !important;;
+}
+
+/* flip the url and tab bars */
+#navigator-toolbox{
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+/* get rid of some default colors */
+#navigator-toolbox, #navigator-toolbox-background{
+  background: transparent !important;
+}
+.browser-toolbar{
+  background: transparent !important;
+}
+#navigator-toolbox{
+  #border-bottom: none !important;
+}
+#urlbar-background, #searchbar{
+  background: transparent !important;
+  border: none !important;
+}
+
+/* tab padding */
+#tabbrowser-tabs {
+  padding: 2px 3px !important;
+}
+
+.tabbrowser-tab {
+  padding: 2px 2px !important;
+}
+
+/* tab backgrounds */
+.tab-background{
+  margin: 0 !important;
+  border: none !important;
+  background: #ffffff10;
+}
+.tab-background[selected="true"]{
+  background: #ffffff25 !important;
+}
+
+/* tab context line */
+.tab-stack > .tab-background > .tab-context-line{
+  height:40px !important;
+  margin:0 !important;
+  border-radius: 0px !important;
+  opacity: 0.3;
+  transition: all 0s !important;
+}
+.tab-stack > .tab-background[selected="true"] > .tab-context-line{
+  height: 40px !important;
+  opacity: 0.6;
+}
+
+#navigator-toolbox {
+  border-bottom: none !important;
+}
+
+#nav-bar {
+  margin-top: 4px !important;
+}
+
+/* Hide solo tab */
+#tabbrowser-tabs, #tabbrowser-arrowscrollbox, #tabbrowser-tabs[positionpinnedtabs] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[pinned] {
+  min-height: 0 !important;
+}
+#tabbrowser-tabs tab[first-visible-tab=true][last-visible-tab=true] {
+  visibility: collapse; 
+}
+/* Hide New Tab Button immediately next to solo tab */
+#tabbrowser-tabs tab[first-visible-tab="true"][last-visible-tab="true"] + toolbarbutton {
+  visibility: collapse;
+}
+
+
+/* make addon buttons greyscale for better theming */
+.toolbarbutton-icon{
+  filter: grayscale(1);
 }
