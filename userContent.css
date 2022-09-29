@@ -11,3 +11,33 @@
 		scrollbar-color: rgb(161, 161, 161) transparent !important;
 	}
 }
+
+@-moz-document domain(www.youtube.com) {
+	ytd-mini-guide-renderer.ytd-app {
+		background: transparent !important;
+	}
+	ytd-mini-guide-entry-renderer {
+		background: transparent !important;
+	}
+	#header.ytd-rich-grid-renderer { 
+		display: none !important;
+	}
+	ytd-app {
+		background: #151515 !important;
+	}
+	#masthead{
+		background: #151515 !important;
+	}
+	yt-related-chip-cloud-renderer{
+		display: none !important;
+	}
+	#guide-content.ytd-app{
+		background: #151515 !important;
+	}
+	#voice-search-button{
+		display: none !important;
+	}
+	#buttons.ytd-masthead{
+		display: none !important;
+	}
+}
